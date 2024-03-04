@@ -5,3 +5,9 @@
 .show-dropdown{
     display: flex !important;
 }
+
+.hide-aside{
+    display: none;
+    /* transform: translateX(-100%); */
+    transition: transform 0.1s ease-in-out;
+}

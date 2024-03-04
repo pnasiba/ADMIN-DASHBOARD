@@ -20,7 +20,7 @@
     </head>
     <body>
 
-        <header class="bg-white fixed top-0 w-full left-0 shadow-2xl shadow-indigo-100 py-[14px]">
+        <header class="bg-white z-50 fixed top-0 w-full left-0 shadow-2xl shadow-indigo-100 py-[14px]">
             <nav class="container-fluid flex items-center justify-between">
                 <ul class="flex items-center gap-6">
 
@@ -32,11 +32,11 @@
                    </li>
 
                     <li>
-                        <button><i class="bi bi-list text-4xl"></i></button>
+                        <button class="toggle-menu"><i class="bi bi-list text-4xl"></i></button>
                     </li>
 
-                    <li class="flex items-center border-[1px] w-[334px] rounded-[3px]">
-                        <input type="search" class="hiddin md:block px-3 py-[7px] w-[300px] outline-none focus:ring-2 ring-indigo-500 duration-150" placeholder="Enter search text...">
+                    <li class="items-center border-[1px] w-[334px] rounded-[3px] hidden md:block">
+                        <input type="search" class="px-3 py-[7px] w-[300px] outline-none focus:ring-2 ring-indigo-500 duration-150" placeholder="Enter search text...">
                         <i class="bi bi-search font-semibold text-lg text-[#012970]"></i>
                     </li>
                 </ul>
@@ -57,17 +57,18 @@
                         <li class="hover:bg-indigo-100 border w-full">
                             <a href="#" class="p-3 flex gap-x-2 w-full hover:text-indigo-600 items-center "><i class="bi bi-gear-fill"></i><span>Settings</span></a>
                         </li>
-                        <li class="hover:bg-indigo-100 border w-full">
-                            <a href="#" class="p-3 flex gap-x-2 w-full hover:text-indigo-600 items-center "><i class="bi bi-box-arrow-right"></i><span>Log Out</span></a>
+                        <li class="hover:bg-indigo-100 border w-full" onclick="logOut()">
+                            <a href="./pages/login.html" class="p-3 flex gap-x-2 w-full hover:text-indigo-600 items-center "><i class="bi bi-box-arrow-right"></i><span>Log Out</span></a>
                         </li>
                     </ul>
                 </button>
             </nav>
         </header>
 
-        
-        <main class="pt-[90px]">
-            <aside class="max-w-[340px] bg-white shadow-2xl min-h-screen">
+
+        <main class="pt-[60px] flex">
+
+            <aside id="aside" class="min-w-[340px] absolute md:static bg-white shadow-2xl min-h-screen">
                 <ul class="nav-menu p-3">
 
                     <!-- dynamic content -->
@@ -79,6 +80,13 @@
                     </li> -->
                 </ul>
             </aside>
+
+
+            <section id="main" class="w-full p-5 pt-8">
+                <div class="w-full border-[1px] border-dashed border-indigo-600 p-5">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, consequuntur magnam. At, error quos ab veniam corrupti id placeat ad dolorem, quia tempore, natus inventore accusamus asperiores non voluptatibus minus!</p>
+                </div>
+            </section>
         </main>
 
 

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="icon" href="https://e-jurnal-one.vercel.app/assets/img/logo.png">
+    <!-- Tailwind Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Sign Up</title>
+</head>
+<body>
+    <main class="w-full min-h-screen grid place-content-center">
+    
+        <div class="login-wrapper cursor-pointer  p-5 min-w-[440px] max-w-[490px] rounded-xl shadow-lg shadow-indigo-300">
+            <h1 class="text-indigo-600 font-bold text-center text-2xl mb-4">Sign Up</h1>
+    
+            <form action="#">
+                <label for="name">
+                    <p class="mb-[7px] font-semibold">Enter Name:</p>
+                    <input type="text" id="name"
+                        class="py-2 px-3 border block mb-7 w-full rounded-md duration-200 outline-none focus:ring-2 ring-indigo-400"
+                        placeholder="Enter name">
+                </label>
+
+                <label for="lastname">
+                    <p class="mb-[7px] font-semibold">Enter Last Name:</p>
+                    <input type="text" id="lastname"
+                        class="py-2 px-3 border block mb-7 w-full rounded-md duration-200 outline-none focus:ring-2 ring-indigo-400"
+                        placeholder="Enter last name">
+                </label>
+
+                <label for="email">
+                    <p class="mb-[7px] font-semibold">Enter Email:</p>
+                    <input type="email" id="email"
+                        class="py-2 px-3 border block mb-7 w-full rounded-md duration-200 outline-none focus:ring-2 ring-indigo-400"
+                        placeholder="Enter name">
+                </label>
+
+                <label for="password">
+                    <p class="mb-[7px] font-semibold">Enter password:</p>
+                    <input type="password" id="password"
+                        class="py-2 px-3 border block mb-10 w-full rounded-md duration-200 outline-none focus:ring-2 ring-indigo-400"
+                        placeholder="Enter password">
+                </label>
+    
+                <button type="submit"
+                    class="w-full bg-indigo-500 text-white text-2xl py-2 rounded-3xl font-semibold hover:bg-indigo-600 mb-4">Sign
+                    Up</button>
+    
+                <p class="text-center text-gray-500">Already have an account? <a href="./login.html" class="underline text-indigo-500">Log in here.</a></p>
+            </form>
+        </div>
+    </main>
+</body>
+
+<script src="../assets/js/utils.js"></script>
+<script src="../assets/js/registar.js"></script>
+</html>
