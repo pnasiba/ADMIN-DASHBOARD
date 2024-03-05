@@ -9,24 +9,8 @@ dropdown.addEventListener("click", function (e) {
   dropdownMenu.classList.toggle("show-dropdown");
 });
 
-// window.addEventListener("click", function(e){
-
-//     if(e.target.nodeName!="HTML"){
-
-//         if(!e.target.parentNode.classList.contains("dropdown-menu") || !e.target.parentNode.classList.contains("dropdown")){
-//             dropdownMenu.classList.add("show-dropdown")
-//         } else{
-//             dropdownMenu.classList.remove("show-dropdown");
-//         }
-//     } else{
-//             dropdownMenu.classList.remove("show-dropdown");
-//     }
-
-// })
 
 // Navigation menu funtionally
-
-
 
 function renderNavigationMenu(data) {
   if (data.length) {
